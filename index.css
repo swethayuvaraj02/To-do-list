@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  min-width: 250px;
+  font-family: Arial, sans-serif;
+}
+
+/* Global layout */
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+.header {
+  background-color: #3a2323fd;
+  padding: 30px 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
+/* ADD FORM */
+#add-todo-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#add-todo-form input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#add-todo-form button {
+  padding: 10px 20px;
+  background: #5e3b3b;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-todo-form button:hover {
+  background: #bbb;
+  color: #be8686c5;
+}
+
+/* FILTER BAR */
+#filter-todo-input {
+  width: 300px;
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* TASK LIST ITEMS */
+ul li {
+  cursor: pointer;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #472a2aa2;
+  font-size: 18px;
+  transition: 0.2s;
+  position: relative;
+  user-select: none;
+  margin-bottom: 2px;
+}
+#clear-todos-button {
+  padding: 10px 20px;
+  background: #5e3b3b;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+li.checked {
+  text-decoration: line-through;
+  color: rgb(104, 80, 80);       
+  font-weight: 600;    
+  opacity: 1;         
+}
+li:hover {
+  background: #bbb;
+  color: #be8686c5;
+}
